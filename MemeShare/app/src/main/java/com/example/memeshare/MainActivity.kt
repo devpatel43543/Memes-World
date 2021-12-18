@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         loadMeame()
     }
     private fun loadMeame(){
-        val queue = Volley.newRequestQueue(this)
+        val queue = Volley.newRequestQueue(this) //Volley is an HTTP library that makes networking for Android apps easier
         val url = "https://meme-api.herokuapp.com/gimme"
         pop.visibility = View.VISIBLE
 // Request a string response from the provided URL.
