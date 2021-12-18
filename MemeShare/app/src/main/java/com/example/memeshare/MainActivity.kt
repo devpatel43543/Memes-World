@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         val jasonobjrequest= JsonObjectRequest(Request.Method.GET, url,null,
             { response ->
                 current=response.getString("url")
-                Glide.with(this).load(current).listener(object :RequestListener<Drawable>{
+                Glide.with(this).load(current).listener(object :RequestListener<Drawable>{ //Glide is an Image Loader Library for Android
                     override fun onLoadFailed(
                         e: GlideException?,
                         model: Any?,
